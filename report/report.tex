@@ -1,0 +1,64 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{listings}
+
+\title{JPEG Compression with GUI}
+%\author{Your Name \\ Professor: Dr. John Smith \\ Teaching Assistant: Jane Doe}
+\date{\today}
+
+\begin{document}
+
+\begin{titlepage}
+  \centering
+  \includegraphics[scale=0.4]{ut.png}
+  %\vspace{2cm}
+  \begin{center}
+    \Large{University of Tehran \\ Engineering Science Faculty \\ }
+    \vspace{2cm}
+    \LARGE{Digital Image Processing\\}
+    \vspace{2cm}
+
+   \large{Abbas Mohamadiyan and Faeze Habibi\\}
+   \vspace{1cm}
+   \large{Professor: Dr. Hadi Amiri\\}
+   \vspace{1cm}
+   \large{Teaching Assistant: Mahyar Riyazati}
+
+  \end{center}
+  %\vfill
+ \maketitle
+ %\includegraphics[scale=0.4]{ut.png}
+ \end{titlepage}
+
+\section{Introduction}
+In this report, we discuss the implementation of a JPEG compression application. The application allows users to open an image, compress it using the JPEG algorithm, and save the compressed image. We will provide an overview of the code, explain the key components, and discuss the JPEG compression process.
+
+\section{Code Overview}
+The application is developed using Python and utilizes the PyQt5 library for the graphical user interface (GUI). The main components of the code include:
+
+\begin{itemize}
+  \item \textbf{MyWindow Class}: This class represents the PyQt5 window and contains the GUI elements such as buttons and labels. It handles events like opening an image and compressing the image.
+  
+  \item \textbf{Open Image}: The "Open Image" button allows the user to select an image file using a file dialog. The selected image is displayed in the GUI.
+  
+  \item \textbf{Compress Image}: The "Compress Image" button triggers the compression process. It prompts the user to enter a compression quality factor, applies JPEG compression, and saves the compressed image.
+\end{itemize}
+
+\section{JPEG Compression Process}
+The JPEG compression process follows these steps:
+
+\begin{enumerate}
+  \item \textbf{Image Preparation}: The selected image is read and prepared for compression.
+  
+  \item \textbf{JPEG Compression}: The image is compressed using the JPEG algorithm. The compression quality factor is specified by the user.
+  
+  \item \textbf{Saving Compressed Image}: The compressed image is saved in the same directory as the original image, with a prefix indicating it has been compressed.
+\end{enumerate}
+
+\section{Conclusion}
+The JPEG compression application provides a user-friendly interface for compressing images using the JPEG algorithm. The implementation demonstrates the compression process and allows users to adjust the compression quality. The code can be further customized or extended to incorporate additional features or functionality.
+
+\end{document}
+
