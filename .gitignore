@@ -1,0 +1,28 @@
+# Images
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.webp
+*.svg
+
+# Microsoft PowerPoint
+*.ppt
+*.pptx
+*.pptm
+
+# Microsoft Word
+*.doc
+*.docx
+*.docm
+
+# Excel
+*.xls
+*.xlsx
+*.xlsm
+*.gsheet
+*.gslides
+
+# PDF
+*.pdf
